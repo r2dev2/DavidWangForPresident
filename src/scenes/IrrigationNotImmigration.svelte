@@ -6,7 +6,7 @@
 <video src="./sources/david_believeinimmigration.mp4" autoplay on:ended={() => (showImmigration = true)} />
 {#if showImmigration}
   <!-- svelte-ignore a11y-media-has-caption -->
-  <video class="immigration" src="./sources/david_notimmigration.mp4" autoplay />
+  <video class="immigration" src="./sources/david_notimmigration.mp4" autoplay on:ended />
 {/if}
 
 <style>
