@@ -1,6 +1,7 @@
 import Beginning from './Beginning.svelte';
 import WhyRun from './WhyRun.svelte';
 import WhatBelieveInAgain from './WhatBelieveInAgain.svelte';
+import IrrigationNotImmigration from './IrrigationNotImmigration.svelte';
 import DavidCar from './DavidCar.svelte';
 import End from './End.svelte';
 
@@ -8,7 +9,8 @@ import End from './End.svelte';
 export const scenes = [
   // { name: 'beginning', component: Beginning },
   // { name: 'why_run', component: WhyRun },
-  { name: 'what_believe_in_again', component: WhatBelieveInAgain },
+  // { name: 'what_believe_in_again', component: WhatBelieveInAgain },
+  { name: 'irrigation_not_immigration', component: IrrigationNotImmigration },
   { name: 'david_car', component: DavidCar },
   { name: 'end', component: End }
 ];
