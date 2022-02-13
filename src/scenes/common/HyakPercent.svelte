@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
   import { cubicOut } from 'svelte/easing';
 
   export let filled = false;
@@ -7,6 +8,7 @@
   let duration = 2000;
 
   const sleep = ms => new Promise(res => setTimeout(res, ms));
+  const dispatch = createEventDispatcher();
 
   const fillChart = async () => {
     let beg = Date.now();
@@ -14,6 +16,7 @@
       await sleep(10);
     }
     fillAngle = 360;
+    dispatch('transitionend');
   };
 
   $: if (filled) {
@@ -29,11 +32,12 @@
 
 <style>
   .chart {
+    font-size: calc(var(--size, 10rem) / 6);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
-    height: 10rem;
+    width: var(--size, 10rem);
+    height: var(--size, 10rem);
     border: 1px solid black;
     border-radius: 50%;
     background: conic-gradient(forestgreen var(--fill-angle), yellow 0deg);
