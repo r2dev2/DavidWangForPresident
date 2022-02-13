@@ -4,20 +4,23 @@
   import HyakPercent from './common/HyakPercent.svelte';
 
   let filled = false;
+  let hasEnded = false;
   let mountSupport = false, mountDesc = false;
 
   const dispatch = createEventDispatcher();
 
   const next = () => {
+    if (hasEnded) return;
+    hasEnded = true;
     setTimeout(() => {
       dispatch('ended');
-    }, 200);
+    }, 1500);
   };
 
   onMount(() => {
     setTimeout(() => {
       mountSupport = true;
-    }, 500);
+    }, 1000);
   });
 </script>
 
@@ -42,6 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 0;
+    padding: 0;
     transform-origin: left;
     transform: scaleX(0);
     transition: 700ms ease-out;
