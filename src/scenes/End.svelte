@@ -1,3 +1,12 @@
+<script>
+  import { onMount } from 'svelte';
+  import { davidWangyAudio } from '../store.js';
+
+  onMount(() => {
+    davidWangyAudio.pause();
+  });
+</script>
+
 <div class="container">
   <p>The End</p>
 </div>

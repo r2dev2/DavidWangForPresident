@@ -7,6 +7,7 @@ import BennieApprove from './BennieApprove.svelte';
 import StudentSupport from './StudentSupport.svelte';
 import STEMSupport from './STEMBusinessSupport.svelte';
 import DavidCar from './DavidCar.svelte';
+import DavidFlag from './DavidFlag.svelte';
 import End from './End.svelte';
 
 /** @type {{ name: string, component: typeof DavidCar}} */
@@ -20,5 +21,6 @@ export const scenes = [
   { name: 'student_support', component: StudentSupport },
   { name: 'stem_biz_support', component: STEMSupport },
   { name: 'david_car', component: DavidCar },
+  { name: 'david_flag', component: DavidFlag },
   { name: 'end', component: End }
 ];
