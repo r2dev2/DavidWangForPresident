@@ -1,10 +1,25 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher, onMount } from 'svelte';
+  import { davidWangyAudio } from '../store.js';
   import VoteWang from './common/VoteWang.svelte';
 
   let showCredits = false;
 
   const dispatch = createEventDispatcher();
+
+  const sleep = ms => new Promise(res => setTimeout(res, ms));
+
+  onMount(() => {
+    setTimeout(async () => {
+      const duration = 15000;
+      let beg = Date.now();
+      for (let volume = 1; volume > 0; volume = 1 - (Date.now() - beg) / duration) {
+        await sleep(10);
+        davidWangyAudio.volume = volume;
+      }
+      davidWangyAudio.volume = 0;
+    }, 10000);
+  });
 
   const pbRate = 0.75;
   let playbackRate = pbRate;

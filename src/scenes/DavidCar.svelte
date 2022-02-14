@@ -18,3 +18,10 @@
 
 <video src="./sources/david_car.mp4" autoplay muted on:ended bind:playbackRate />
 <VoteWang {mountVote} />
+
+<style>
+  video {
+    transform-origin: bottom left;
+    transform: scale(1.15);
+  }
+</style>
