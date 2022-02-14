@@ -38,6 +38,7 @@
   }
 
   span {
+    text-align: center;
     opacity: 1;
     transition: 300ms ease-in;
   }

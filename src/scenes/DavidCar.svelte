@@ -3,7 +3,9 @@
   import { davidWangyAudio } from '../store.js';
 
   onMount(() => {
-    // davidWangyAudio.addEventListener('canplaythrough', () => davidWangyAudio.play());
+    if (1) return;
+    davidWangyAudio.addEventListener('canplaythrough', () => davidWangyAudio.play());
+    davidWangyAudio.play();
   });
 </script>
 
