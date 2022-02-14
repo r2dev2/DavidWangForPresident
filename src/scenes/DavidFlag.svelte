@@ -11,7 +11,7 @@
 
   onMount(() => {
     setTimeout(async () => {
-      const duration = 15000;
+      const duration = 14000;
       let beg = Date.now();
       for (let volume = 1; volume > 0; volume = 1 - (Date.now() - beg) / duration) {
         await sleep(10);

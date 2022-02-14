@@ -38,7 +38,7 @@
     justify-content: center;
     width: var(--size, 10rem);
     height: var(--size, 10rem);
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 50%;
     background: conic-gradient(forestgreen var(--fill-angle), yellow 0deg);
   }
