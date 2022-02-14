@@ -8,6 +8,7 @@ import WhoSupports from './WhoSupports.svelte';
 import BennieApprove from './BennieApprove.svelte';
 import StudentSupport from './StudentSupport.svelte';
 import STEMSupport from './STEMBusinessSupport.svelte';
+import HotYouSay from './HotYouSay.svelte';
 import DavidCar from './DavidCar.svelte';
 import DavidFlag from './DavidFlag.svelte';
 import End from './End.svelte';
@@ -24,6 +25,7 @@ export const scenes = [
   { name: 'bennie_supports', component: BennieApprove },
   { name: 'student_support', component: StudentSupport },
   { name: 'stem_biz_support', component: STEMSupport },
+  { name: 'david_is_hot_text', component: HotYouSay },
   { name: 'david_car', component: DavidCar },
   { name: 'david_flag', component: DavidFlag },
   { name: 'end', component: End }
