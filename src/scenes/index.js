@@ -3,6 +3,7 @@ import WhyRun from './WhyRun.svelte';
 import WhatBelieveInAgain from './WhatBelieveInAgain.svelte';
 import IrrigationNotImmigration from './IrrigationNotImmigration.svelte';
 import CleanUpMess from './CleanUpMess.svelte';
+import ReturnToWork from './ReturnToWork.svelte';
 import WhoSupports from './WhoSupports.svelte';
 import BennieApprove from './BennieApprove.svelte';
 import StudentSupport from './StudentSupport.svelte';
@@ -18,6 +19,7 @@ export const scenes = [
   { name: 'what_believe_in_again', component: WhatBelieveInAgain },
   { name: 'irrigation_not_immigration', component: IrrigationNotImmigration },
   { name: 'clean_up_mess', component: CleanUpMess },
+  { name: 'return_to_hard_work', component: ReturnToWork },
   { name: 'who_supports', component: WhoSupports },
   { name: 'bennie_supports', component: BennieApprove },
   { name: 'student_support', component: StudentSupport },
